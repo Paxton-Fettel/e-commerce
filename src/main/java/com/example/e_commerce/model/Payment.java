@@ -32,6 +32,7 @@ public class Payment {
     @Column(nullable = false)
     private String status;
 
+    @Column(nullable = false, unique = true)
     private String transactionId;
 
     @CreationTimestamp
